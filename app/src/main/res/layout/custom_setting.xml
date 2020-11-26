@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Exercise Type"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="타바타이름:"
+                android:textSize="10dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/tabataname"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint = "#ffffff"
+                android:hint="타바타이름 설정"
+                android:privateImeOptions="defaultInputmode=korean"
+                android:textColorHint="#495057"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Exercise Type"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type:"
+                android:textSize="10dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/types"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint = "#ffffff"
+                android:inputType="number"
+                android:hint="운동종류 개수(default=1)"
+                android:textColorHint="#495057"
+                android:textColor="#ffffff"/>
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consist of Tabatas"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <RadioGroup android:id="@+id/radioGroup"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/rg_btn1">
+            <RadioButton
+                android:id="@+id/rg_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AAA/BBB/CCC..."
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:buttonTint="#ffffff"/>
+            <RadioButton
+                android:text="ABC../ABC../ABC.."
+                android:textColor="#ffffff"
+                android:buttonTint="#ffffff"
+                android:textSize="15dp"
+                android:id="@+id/rg_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Set Per 1 Exercise"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/sets"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint = "#ffffff"
+                android:hint="운동당 세트수(default=3)"
+                android:textColorHint="#495057"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sets"
+                android:textSize="10dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/SettingPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickPreSetting"
+            android:text="Pre"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/SettingNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickNextSetting"
+            android:text="Next"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동설정"
+        android:textSize="30dp"
+        android:textColor="#ffffff"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="1dp"
+        android:scrollbarFadeDuration = "0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:id="@+id/exercisell"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간설정"
+        android:textSize="30dp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶Time of Exercise"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/exercisetimes"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint = "#ffffff"
+            android:textColor="#ffffff"
+            android:hint="운동시간(default=10s)"
+            android:textColorHint="#495057"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶Breaktime for each workout"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/resttimes"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint = "#ffffff"
+            android:textColor="#ffffff"
+            android:hint="운동사이 쉬는시간(default=3s)"
+            android:textColorHint="#495057"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶Breaktime for each set"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/settimes"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint = "#ffffff"
+            android:textColor="#ffffff"
+            android:hint="세트사이 쉬는시간(default=5s)"
+            android:textColorHint="#495057"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/SettingPre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickPreSetting2"
+            android:text="Cancel"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/SettingNext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
